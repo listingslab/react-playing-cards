@@ -1,0 +1,36 @@
+{
+  "name": "react-playing-cards",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "clear && yarn storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy": "clear && build-storybook && firebase deploy"
+  },
+  "author": {
+    "name": "listingslab",
+    "email": "listingslab@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listingslab-software/react-playing-cards.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/react": "^5.3.13",
+    "babel-loader": "^8.0.6"
+  },
+  "keywords": [
+    "PWA",
+    "JavaScript",
+    "SVG",
+    "React"
+  ]
+}
