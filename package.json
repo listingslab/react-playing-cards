@@ -1,11 +1,11 @@
 {
   "name": "react-playing-cards",
-  "version": "0.0.2",
-  "description": "",
+  "description": "Customisable SVG based Playing Card graphics",
+  "version": "0.0.3",
   "main": "index.js",
   "scripts": {
     "start": "clear && yarn storybook",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook",
     "deploy": "clear && build-storybook && firebase deploy"
   },
