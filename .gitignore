@@ -1,6 +1,8 @@
 __dev
 build
 storybook-static
+.env.development
+.env.production
 
 # Logs
 logs

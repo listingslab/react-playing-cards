@@ -1,6 +1,6 @@
 import { addParameters } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-console.log(INITIAL_VIEWPORTS)
+// console.log(INITIAL_VIEWPORTS)
 
 const newViewports = {
     landscape: {
@@ -18,6 +18,6 @@ addParameters({
             ...INITIAL_VIEWPORTS,
             ...newViewports,
         },
-        defaultViewport: 'landscape',
+        defaultViewport: 'iphone8p',
     },
 });
