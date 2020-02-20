@@ -1,8 +1,7 @@
 {
   "name": "react-playing-cards",
   "description": "Customisable SVG based Playing Card graphics",
-  "version": "0.0.4",
-  "main": "index.js",
+  "version": "0.0.5",
   "scripts": {
     "start": "clear && yarn storybook",
     "storybook": "start-storybook -p 6006 -s public",
@@ -29,11 +28,9 @@
     "babel-loader": "^8.0.6"
   },
   "keywords": [
-    "PWA",
+    "Poker",
     "JavaScript",
     "SVG",
     "React"
   ]
 }
-.env.development
-.env.production

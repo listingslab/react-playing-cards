@@ -1,7 +1,6 @@
 import { addParameters } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 // console.log(INITIAL_VIEWPORTS)
-
 const newViewports = {
     landscape: {
         name: '800x600',

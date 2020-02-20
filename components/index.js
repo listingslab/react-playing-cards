@@ -1,1 +1,1 @@
-dsad
+alert('ok')

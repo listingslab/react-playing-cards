@@ -1,5 +1,8 @@
 import { create } from '@storybook/theming/create';
 import { addons } from '@storybook/addons';
+import pJSON from "../package.json";
+
+console.log(`${pJSON.name} ${pJSON.version} (${process.env.REACT_APP_ENV})`);
 
 addons.setConfig({
     isFullscreen: false,
