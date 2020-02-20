@@ -6,14 +6,21 @@ addParameters({
   viewport: {
     viewports: {
       ...INITIAL_VIEWPORTS,
-      dumbfone: {
+      dumbfoneL: {
         name: "Dumbfone",
         styles: {
           width: "738px",
           height: "414px"
-        }
-      }
+        },
+      },
+      dumbfoneP: {
+        name: "Dumbfone",
+        styles: {
+          width: "414px",
+          height: "738px"
+        },
+      },
     },
-    defaultViewport: "dumbfone"
+    defaultViewport: "dumbfoneP"
   }
 });
