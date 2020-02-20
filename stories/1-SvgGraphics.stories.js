@@ -1,4 +1,5 @@
 import React from 'react';
+import { ContainedButtons } from '../components/index'
 
 export default {
     title: 'Graphics',
@@ -7,5 +8,6 @@ export default {
 
 export const SVG = () => (
     <React.Fragment>
+        <ContainedButtons />
     </React.Fragment>
 );

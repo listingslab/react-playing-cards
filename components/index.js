@@ -1,1 +1,5 @@
-alert('ok')
+import ContainedButtons from "./ContainedButtons";
+
+export {
+    ContainedButtons,
+};
