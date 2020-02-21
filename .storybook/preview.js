@@ -21,6 +21,6 @@ addParameters({
         },
       },
     },
-    defaultViewport: "dumbfoneP"
+    defaultViewport: "dumbfoneL"
   }
 });

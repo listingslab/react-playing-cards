@@ -1,9 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
-    Divider,
     Grid,
-    Typography
 } from '@material-ui/core';
 import {
     Club,
@@ -22,10 +20,6 @@ export default function Suits() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Typography variant={`button`}>
-                &lt;Suits /&gt;
-            </Typography>
-            <Divider />
             <Grid container>
                 <Grid item xs={3} className={classes.gridItem}>
                     <Spade />
@@ -40,10 +34,6 @@ export default function Suits() {
                     <Heart />
                 </Grid>
             </Grid>
-            <Divider />
-            <Typography variant={`button`}>
-                Icon Buttons
-            </Typography>
 
         </div>
     );
