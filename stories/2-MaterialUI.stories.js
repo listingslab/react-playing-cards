@@ -1,14 +1,13 @@
 import React from "react";
 import {
   ButtonExamples,
-  Dropdown
+  Dropdown,
+
 } from "../components";
 
-// React implementation of Google's Material Design System"
-
 export default {
+  // React implementation of Google's Material Design System"
   title: 'Material UI',
-  // component: Buttons
 };
 
 export const Example_Buttons = () => (
