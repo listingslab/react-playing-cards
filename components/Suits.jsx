@@ -7,10 +7,14 @@ import {
     Club,
     Diamond,
     Heart,
-    Spade,
+    IconSpade,
 } from '../graphics'
 
 const useStyles = makeStyles(theme => ({
+    quarters: {
+        margin: 'auto',
+        maxWidth: 300
+    },
     gridItem: {
         padding: theme.spacing()
     }
@@ -19,19 +23,19 @@ const useStyles = makeStyles(theme => ({
 export default function Suits() {
     const classes = useStyles();
     return (
-        <div className={classes.root}>
+        <div className={classes.quarters}>
             <Grid container>
-                <Grid item xs={3} className={classes.gridItem}>
-                    <Spade />
+                <Grid item xs={6} className={classes.gridItem}>
+                    <IconSpade />
                 </Grid>
-                <Grid item xs={3} className={classes.gridItem}>
+                <Grid item xs={6} className={classes.gridItem}>
                     <Diamond />
                 </Grid>
-                <Grid item xs={3} className={classes.gridItem}>
-                    <Club />
-                </Grid>
-                <Grid item xs={3} className={classes.gridItem}>
+                <Grid item xs={6} className={classes.gridItem}>
                     <Heart />
+                </Grid>
+                <Grid item xs={6} className={classes.gridItem}>
+                    <Club />
                 </Grid>
             </Grid>
 

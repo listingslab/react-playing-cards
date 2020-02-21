@@ -1,26 +1,25 @@
 import { addParameters } from "@storybook/react";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
-// console.log(INITIAL_VIEWPORTS)
 
 addParameters({
   viewport: {
     viewports: {
-      ...INITIAL_VIEWPORTS,
       dumbfoneL: {
-        name: "Dumbfone",
+        name: "Dumbfone Landscape",
         styles: {
           width: "738px",
           height: "414px"
         },
       },
       dumbfoneP: {
-        name: "Dumbfone",
+        name: "Dumbfone Potrait",
         styles: {
           width: "414px",
           height: "738px"
         },
       },
     },
+    ...INITIAL_VIEWPORTS,
     defaultViewport: "dumbfoneL"
   }
 });
