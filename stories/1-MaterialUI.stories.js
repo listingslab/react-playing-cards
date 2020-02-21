@@ -1,13 +1,20 @@
 import React from "react";
-import { ContainedButtons } from "../components/index";
+import {
+  ButtonExamples,
+  Dropdown
+} from "../components";
+
+// React implementation of Google's Material Design System"
 
 export default {
-  title: "React implementation of Google's Material Design System",
-  component: Buttons
+  title: 'Material UI',
+  // component: Buttons
 };
 
-export const Buttons = () => (
-  <React.Fragment>
-    <ContainedButtons />
-  </React.Fragment>
+export const Example_Buttons = () => (
+  <ButtonExamples />
+);
+
+export const Dropdowns = () => (
+  <Dropdown />
 );
