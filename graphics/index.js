@@ -8,6 +8,9 @@ import Heart from "./suitIcons/Heart";
 import Spade from "./suitIcons/Spade";
 
 import IconSpade from "./suitIcons/IconSpade";
+import IconDiamond from "./suitIcons/IconDiamond";
+import IconHeart from "./suitIcons/IconHeart";
+import IconClub from "./suitIcons/IconClub";
 
 export {
   Club,
@@ -17,4 +20,7 @@ export {
   Firestore,
   Github,
   IconSpade,
+  IconDiamond,
+  IconHeart,
+  IconClub,
 };

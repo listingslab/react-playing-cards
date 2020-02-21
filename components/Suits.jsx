@@ -4,9 +4,9 @@ import {
     Grid,
 } from '@material-ui/core';
 import {
-    Club,
-    Diamond,
-    Heart,
+    IconClub,
+    IconDiamond,
+    IconHeart,
     IconSpade,
 } from '../graphics'
 
@@ -29,13 +29,13 @@ export default function Suits() {
                     <IconSpade />
                 </Grid>
                 <Grid item xs={6} className={classes.gridItem}>
-                    <Diamond />
+                    <IconDiamond />
                 </Grid>
                 <Grid item xs={6} className={classes.gridItem}>
-                    <Heart />
+                    <IconHeart />
                 </Grid>
                 <Grid item xs={6} className={classes.gridItem}>
-                    <Club />
+                    <IconClub />
                 </Grid>
             </Grid>
 
