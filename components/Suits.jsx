@@ -13,7 +13,7 @@ import {
 const useStyles = makeStyles(theme => ({
     quarters: {
         margin: 'auto',
-        maxWidth: 300
+        maxWidth: 400
     },
     gridItem: {
         padding: theme.spacing()

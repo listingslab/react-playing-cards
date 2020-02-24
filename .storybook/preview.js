@@ -20,6 +20,6 @@ addParameters({
       },
     },
     ...INITIAL_VIEWPORTS,
-    defaultViewport: "dumbfoneL"
+    defaultViewport: "dumbfoneP"
   }
 });
