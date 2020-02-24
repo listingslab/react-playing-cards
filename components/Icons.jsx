@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Suits() {
+export default function Icons() {
     const classes = useStyles();
     return (
         <div className={classes.quarters}>

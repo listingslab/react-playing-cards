@@ -1,11 +1,11 @@
 import ButtonExamples from "./ButtonExamples";
 import Dropdown from "./Dropdown";
-import Suits from "./Suits";
+import Icons from "./Icons";
 import Ranks from "./Ranks";
 
 export {
     ButtonExamples,
     Dropdown,
-    Suits,
+    Icons,
     Ranks,
 };
