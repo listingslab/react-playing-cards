@@ -43,11 +43,6 @@ export default function ButtonExamples() {
         <div className={classes.root}>
 
             <Typography variant={`button`}>
-                &lt;Button /&gt;
-            </Typography>
-            <Divider />
-
-            <Typography variant={`button`}>
                 Upload Button
             </Typography>
             <input
@@ -151,19 +146,7 @@ export default function ButtonExamples() {
 
             <Divider />
 
-            <Typography variant={`button`}>
-                Text buttons
-            </Typography>
 
-            <Button color="primary">
-                Primary
-            </Button>
-            <Button color="secondary">
-                Secondary
-            </Button>
-            <Button disabled>Disabled</Button>
-
-            <Divider />
 
             <Typography variant={`button`}>
                 Outlined Buttons

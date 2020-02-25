@@ -5,17 +5,17 @@ addParameters({
   viewport: {
     viewports: {
       dumbfoneL: {
-        name: "Dumbfone Landscape",
+        name: "Generic Dumbfone Landscape",
         styles: {
-          width: "738px",
-          height: "414px"
+          width: "750px",
+          height: "450px"
         },
       },
       dumbfoneP: {
-        name: "Dumbfone Potrait",
+        name: "Generic Dumbfone Potrait",
         styles: {
-          width: "414px",
-          height: "738px"
+          width: "450px",
+          height: "750px"
         },
       },
     },

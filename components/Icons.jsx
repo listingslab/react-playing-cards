@@ -11,34 +11,21 @@ import {
 } from '../graphics'
 
 const useStyles = makeStyles(theme => ({
-    quarters: {
-        margin: 'auto',
-        maxWidth: 400
-    },
-    gridItem: {
-        padding: theme.spacing()
+    maxIconSize: {
+        maxWidth: '100%',
+        maxHeight: 100,
+        margin: 4
     }
 }));
 
 export default function Icons() {
     const classes = useStyles();
     return (
-        <div className={classes.quarters}>
-            <Grid container>
-                <Grid item xs={6} className={classes.gridItem}>
-                    <IconSpade />
-                </Grid>
-                <Grid item xs={6} className={classes.gridItem}>
-                    <IconDiamond />
-                </Grid>
-                <Grid item xs={6} className={classes.gridItem}>
-                    <IconHeart />
-                </Grid>
-                <Grid item xs={6} className={classes.gridItem}>
-                    <IconClub />
-                </Grid>
-            </Grid>
-
-        </div>
+        <React.Fragment>
+            <IconSpade className={classes.maxIconSize} />
+            <IconDiamond className={classes.maxIconSize} />
+            <IconClub className={classes.maxIconSize} />
+            <IconHeart className={classes.maxIconSize} />
+        </React.Fragment>
     );
 }

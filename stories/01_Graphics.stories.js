@@ -7,6 +7,6 @@ export default {
     title: 'Graphics',
 }
 
-export const SVG_Icons = () => (
+export const Icons_ = () => (
     <Icons />
 )
