@@ -3,6 +3,7 @@ import Dropdown from "./Dropdown";
 import Icons from "./Icons";
 import Ranks from "./Ranks";
 import Suits from "./Suits";
+import Faces from "./Faces";
 
 export {
     ButtonExamples,
@@ -10,4 +11,5 @@ export {
     Icons,
     Ranks,
     Suits,
+    Faces,
 };

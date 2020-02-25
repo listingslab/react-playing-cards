@@ -3,15 +3,23 @@ import {
     Ranks,
     Suits,
 } from "../components";
+import {
+    King
+} from "../graphics";
 
 export default {
     title: 'Cards',
 }
 
-export const Suit_Symbols = () => (
+export const King_ = () => (
+    <King />
+)
+
+export const Suits_ = () => (
     <Suits />
 )
 
-export const Rank_Symbols = () => (
+export const Ranks_ = () => (
     <Ranks />
 )
+
