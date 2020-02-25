@@ -1,8 +1,10 @@
 # React Playing Cards
 
-## Animation
+## Greensock Animation
 
 Based on [greensock.com](https://greensock.com/), an ultra high-performance, professional-grade animation for the modern web.
+
+### Why?
 
 #### Crazy fast
 Performance is paramount, especially on mobile devices with sluggish processors. Silky smooth HTML5 javascript animation is the hallmark of any tweening engine worth its weight and GSAP outperforms old “industry standards” by literally 1000%+ under stress. What was jerky and twitchy is now fluid. It’s the result of countless optimizations made to ensure that your interactive projects are responsive, efficient, and buttery smooth. Check out the speed test for a head-to-head comparison.
