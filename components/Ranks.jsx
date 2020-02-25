@@ -1,16 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
-    Grid,
-} from '@material-ui/core';
-import {
     RankSymbol
 } from '../graphics'
 
 const useStyles = makeStyles(theme => ({
     maxIconSize: {
-        maxWidth: 75,
-        maxHeight: 75,
+        maxWidth: 100,
+        maxHeight: 100,
         margin: 4
     }
 }));
