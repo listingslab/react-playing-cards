@@ -1,7 +1,7 @@
 {
   "name": "react-playing-cards",
-  "description": "Customisable SVG based Playing Card graphics",
-  "version": "0.1.3",
+  "description": "Customisable SVG based playing card graphics",
+  "version": "0.1.4",
   "scripts": {
     "start": "clear && yarn storybook",
     "storybook": "start-storybook -p 6006 -s public",
@@ -20,7 +20,8 @@
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.43"
+    "@material-ui/lab": "^4.0.0-alpha.43",
+    "gsap": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
