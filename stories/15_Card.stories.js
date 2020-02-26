@@ -1,7 +1,6 @@
 import React from "react";
 import {
-    Ranks,
-    Suits,
+    SuitsRanks,
 
 } from "../components";
 import {
@@ -14,12 +13,9 @@ export default {
     title: 'Cards',
 }
 
+export const Suits_and_Ranks_ = () => (<SuitsRanks />)
 export const Jack_ = () => (<Jack />)
-
 export const Queen_ = () => (<Queen />)
-
 export const King_ = () => (<King />)
 
-export const Suits_ = () => (<Suits />)
 
-export const Ranks_ = () => (<Ranks />)

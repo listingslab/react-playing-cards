@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {
     Typography,
 } from '@material-ui/core';
-import { IconSpade } from '../graphics'
+// import { IconSpade } from '../graphics'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -40,12 +40,12 @@ export default function Readme() {
                     Greensock's
                 </a> animation framework; a high-performance, professional-grade animation system for the modern web
             </Typography>
-            <Typography variant={`h6`}>
+            {/* <Typography variant={`h6`}>
                 Fade In/Out
             </Typography>
             <div id={`icon`} className={classes.maxW}>
                 <IconSpade />
-            </div>
+            </div> */}
         </div>
     );
 }

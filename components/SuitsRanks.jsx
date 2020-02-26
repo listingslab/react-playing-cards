@@ -1,22 +1,26 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
+    SuitSymbol,
     RankSymbol
 } from '../graphics'
 
 const useStyles = makeStyles(theme => ({
     maxIconSize: {
-        maxWidth: 100,
         maxHeight: 100,
-        margin: 4
+        maxWidth: 100,
     }
 }));
 
-export default function Ranks() {
+export default function SuitsRanks() {
     const classes = useStyles();
     const color = '#212121'
     return (
         <React.Fragment>
+            <SuitSymbol suit={`S`} color={color} className={classes.maxIconSize} />
+            <SuitSymbol suit={`D`} color={color} className={classes.maxIconSize} />
+            <SuitSymbol suit={`C`} color={color} className={classes.maxIconSize} />
+            <SuitSymbol suit={`H`} color={color} className={classes.maxIconSize} />
             <RankSymbol rank={`R_2`} color={color} className={classes.maxIconSize} />
             <RankSymbol rank={`R_3`} color={color} className={classes.maxIconSize} />
             <RankSymbol rank={`R_4`} color={color} className={classes.maxIconSize} />
