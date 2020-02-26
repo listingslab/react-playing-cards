@@ -1,19 +1,10 @@
 import React from "react";
 import {
-    SuitsRanks,
-
-} from "../components";
-import {
-    King,
-    Queen,
-    Jack
-} from "../graphics";
+    Card,
+} from "../Cards";
 
 export default {
     title: 'Cards',
 }
 
-export const Suits_and_Ranks_ = () => (<SuitsRanks />)
-export const Jack_ = () => (<Jack />)
-export const Queen_ = () => (<Queen />)
-export const King_ = () => (<King />)
+export const Pick_A_Card_ = () => (<Card />)

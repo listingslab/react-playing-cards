@@ -4,7 +4,7 @@ import {
 } from "../components";
 
 export default {
-    title: 'Graphics',
+    title: 'Icons',
 }
 
 export const Icons_ = () => (
