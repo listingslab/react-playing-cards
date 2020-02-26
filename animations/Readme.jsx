@@ -6,13 +6,13 @@ import {
 import { IconSpade } from '../graphics'
 
 const useStyles = makeStyles(theme => ({
-    maxW: {
-        maxWidth: 250
-    },
     root: {
         '& > *': {
             margin: theme.spacing(1),
         },
+    },
+    maxW: {
+        maxWidth: 250
     },
     link: {
         color: "#2194BB",
@@ -27,7 +27,6 @@ export default function Readme() {
         console.log('this is fired after DOM has updated')
     })
 
-
     return (
         <div className={classes.root}>
             <Typography variant={`h5`}>
@@ -41,15 +40,12 @@ export default function Readme() {
                     Greensock's
                 </a> animation framework; a high-performance, professional-grade animation system for the modern web
             </Typography>
-
             <Typography variant={`h6`}>
                 Fade In/Out
             </Typography>
-
             <div id={`icon`} className={classes.maxW}>
                 <IconSpade />
             </div>
-
         </div>
     );
 }
