@@ -1,24 +1,22 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import {
-    SuitSymbol,
-    RankSymbol
-} from '../graphics'
 
-const useStyles = makeStyles(theme => ({
-    maxIconSize: {
-        maxHeight: 100,
-        maxWidth: 10
-    }
-}));
+import React from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
+import {
+    Back
+} from './graphics'
+
+// const useStyles = makeStyles(theme => ({
+//     maxIconSize: {
+//         maxHeight: 100,
+//         maxWidth: 10
+//     }
+// }));
 
 export default function Card() {
-    const classes = useStyles();
-    const color = '#212121'
+    // const classes = useStyles();
     return (
         <React.Fragment>
-            <SuitSymbol suit={`D`} color={color} className={classes.maxIconSize} />
-            <RankSymbol rank={`R_Q`} color={color} className={classes.maxIconSize} />
+            <Back color={`#212121`} />
         </React.Fragment>
     );
 }
