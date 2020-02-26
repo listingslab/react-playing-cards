@@ -9,4 +9,4 @@ export default {
 }
 
 export const Readme_ = () => (<Readme />)
-export const Pick_A_Card_ = () => (<Card />)
+export const Back_ = () => (<Card />)
