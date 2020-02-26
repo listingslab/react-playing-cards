@@ -1,7 +1,7 @@
 {
   "name": "react-playing-cards",
   "description": "Customisable SVG based playing card graphics",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "start": "clear && yarn storybook",
     "storybook": "start-storybook -p 6006 -s public",
@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
-    "@storybook/addon-actions": "^5.3.13",
-    "@storybook/addon-links": "^5.3.13",
-    "@storybook/addon-viewport": "^5.3.13",
-    "@storybook/addons": "^5.3.13",
-    "@storybook/react": "^5.3.13",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-links": "^5.3.14",
+    "@storybook/addon-viewport": "^5.3.14",
+    "@storybook/addons": "^5.3.14",
+    "@storybook/react": "^5.3.14",
     "babel-loader": "^8.0.6"
   },
   "keywords": [
