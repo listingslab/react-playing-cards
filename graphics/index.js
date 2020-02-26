@@ -7,6 +7,8 @@ import IconClub from "./suitIcons/IconClub";
 import RankSymbol from "./RankSymbol";
 import SuitSymbol from "./SuitSymbol";
 import King from "./King";
+import Queen from "./Queen";
+import Jack from "./Jack";
 
 export {
   Firestore,
@@ -18,4 +20,6 @@ export {
   RankSymbol,
   SuitSymbol,
   King,
+  Queen,
+  Jack,
 };
