@@ -12,7 +12,7 @@ export default function Readme() {
     return (
         <React.Fragment>
             <Typography variant={`h5`}>
-                Greensock Animation
+                Animations
             </Typography>
             <Typography variant={`body1`}>
                 React Playing Cards is animated using <a

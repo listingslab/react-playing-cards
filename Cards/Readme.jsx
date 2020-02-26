@@ -13,9 +13,6 @@ export default function Readme() {
             <Typography variant={`h5`}>
                 Cards
             </Typography>
-            <Typography variant={`body1`}>
-                lorem ipsum
-            </Typography>
         </React.Fragment>
     );
 }

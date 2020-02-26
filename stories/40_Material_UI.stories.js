@@ -7,6 +7,6 @@ export default {
     title: 'Material UI',
 }
 
-export const Button_Examples = () => (
+export const Buttons_ = () => (
     <ButtonExamples />
 )
