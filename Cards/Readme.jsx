@@ -7,11 +7,11 @@ import {
     MenuItem,
     Typography
 } from '@material-ui/core';
+import { Front } from './graphics'
 
 const useStyles = makeStyles(theme => ({
     cardFace: {
-        border: '1px solid red',
-        width: '80%',
+        width: '75%',
         margin: 'auto'
     },
     formControl: {
@@ -76,7 +76,7 @@ export default function Readme() {
             </FormControl>
 
             <div className={classes.cardFace}>
-                cardFace
+                <Front />
             </div>
         </React.Fragment>
     );
