@@ -9,6 +9,11 @@ import {
 } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
+    cardFace: {
+        border: '1px solid red',
+        width: '80%',
+        margin: 'auto'
+    },
     formControl: {
         margin: theme.spacing(1),
         minWidth: 120,
@@ -69,6 +74,10 @@ export default function Readme() {
                     <MenuItem value={`H`}>Hearts</MenuItem>
                 </Select>
             </FormControl>
+
+            <div className={classes.cardFace}>
+                cardFace
+            </div>
         </React.Fragment>
     );
 }
