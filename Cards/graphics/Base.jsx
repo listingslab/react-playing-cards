@@ -10,7 +10,7 @@ const makeGraphic = (props, svg) => {
     )
 }
 
-export default function Front(props) {
+export default function Base(props) {
     let c = `black`;
     const { color } = props;
     if (color) c = color

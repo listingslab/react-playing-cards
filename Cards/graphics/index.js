@@ -2,12 +2,16 @@ import King from "./King";
 import Queen from "./Queen";
 import Jack from "./Jack";
 import Back from "./Back";
-import Front from "./Front";
+import Base from "./Base";
+import Suit from "./Suit";
+import Rank from "./Rank";
 
 export {
   Back,
   King,
   Queen,
   Jack,
-  Front,
+  Base,
+  Suit,
+  Rank
 };

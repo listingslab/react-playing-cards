@@ -1,7 +1,7 @@
 {
   "name": "react-playing-cards",
-  "description": "Customisable SVG based playing card graphics",
-  "version": "0.1.6",
+  "description": "Customisable SVG based playing card system in React",
+  "version": "0.1.7",
   "scripts": {
     "start": "clear && yarn storybook",
     "storybook": "start-storybook -p 6006 -s public",
