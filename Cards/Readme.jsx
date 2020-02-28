@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
     FormControl,
@@ -8,37 +8,48 @@ import {
 } from '@material-ui/core';
 import {
     Base,
-    King
+    Rank,
+    Suit
 } from './graphics'
 
 const useStyles = makeStyles(theme => ({
-    boSelecta: {
-        margin: theme.spacing(2),
-        textAlign: 'center'
-    },
+
     cardContainer: {
         position: 'relative',
         width: 300,
         margin: 'auto',
     },
-    rel: {
+    base: {
         position: 'absolute',
         top: 0,
         left: 0,
+        zIndex: 50,
     },
     rank: {
         position: 'absolute',
-        top: 0,
-        left: 0,
+        left: 35,
+        top: 45,
         zIndex: 100,
-        width: 200,
+        width: 90,
+
+    },
+    suit: {
+        position: 'absolute',
+        top: 15,
+        right: 0,
+        zIndex: 150,
+        width: 190,
+    },
+
+
+
+    boSelecta: {
+        margin: theme.spacing(2),
+        textAlign: 'center'
     },
     formControl: {
         margin: theme.spacing(1),
         minWidth: 120,
-    },
-    selectEmpty: {
-        marginTop: theme.spacing(2),
     },
 }));
 
@@ -46,19 +57,18 @@ const makeCard = (card) => {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <King className={classes.rank} />
-            <Base className={classes.rel} />
+            <Suit card={card} className={classes.suit} />
+            <Rank card={card} className={classes.rank} />
+            <Base card={card} className={classes.base} />
         </React.Fragment>
     );
 }
 
 export default function Readme() {
     const classes = useStyles();
-    const [suit, setSuit] = React.useState('S');
+    const [suit, setSuit] = React.useState('S'); // S=Spades, D=Diamonds, H=Hearts, C=Clubs
     const [rank, setRank] = React.useState('A');
-    useEffect(() => {
-        // console.log('this is fired after DOM has updated')
-    })
+
     return (
         <React.Fragment>
 
@@ -107,8 +117,9 @@ export default function Readme() {
 
             <div className={classes.cardContainer}>
                 {makeCard({
-                    suit: `D`,
-                    rank: `5`,
+                    color: `#212121`,
+                    suit,
+                    rank,
                 })}
             </div>
 

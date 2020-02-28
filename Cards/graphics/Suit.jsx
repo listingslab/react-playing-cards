@@ -11,12 +11,13 @@ const makeGraphic = (props, svg) => {
 }
 
 export default function Suit(props) {
-    let c = `#000`;
+    let c = `#000000`;
     let s = `S`;
-    const { color, suit } = props;
-    if (color) c = color
-    if (suit) s = suit
-
+    const { card } = props;
+    if (card) {
+        c = card.color
+        s = card.suit
+    }
     switch (s) {
 
         case `S`:
