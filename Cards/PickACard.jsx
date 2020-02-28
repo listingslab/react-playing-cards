@@ -5,6 +5,7 @@ import {
     InputLabel,
     Select,
     MenuItem,
+    Typography
 } from '@material-ui/core';
 import {
     Base,
@@ -64,7 +65,7 @@ const makeCard = (card) => {
     );
 }
 
-export default function Readme() {
+export default function PickACard() {
     const classes = useStyles();
     const [suit, setSuit] = React.useState('S'); // S=Spades, D=Diamonds, H=Hearts, C=Clubs
     const [rank, setRank] = React.useState('A');
@@ -73,6 +74,9 @@ export default function Readme() {
         <React.Fragment>
 
             <div className={classes.boSelecta}>
+                <Typography variant={`h6`}>
+                    Pick a card, any card...
+                </Typography>
                 <FormControl className={classes.formControl} >
                     <InputLabel id="rank-label">Rank</InputLabel>
                     <Select

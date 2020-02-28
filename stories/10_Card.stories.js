@@ -1,12 +1,9 @@
 import React from "react";
-import {
-    Card,
-    Readme
-} from "../Cards";
+import { Back, PickACard } from "../Cards";
 
 export default {
-    title: 'Cards',
-}
+  title: "Cards"
+};
 
-export const Readme_ = () => (<Readme />)
-export const Back_ = () => (<Card />)
+export const Pick_A_Card = () => <PickACard />;
+export const Back_ = () => <Back />;

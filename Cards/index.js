@@ -1,7 +1,4 @@
-import Card from "./Card";
-import Readme from "./Readme";
+import Back from "./Back";
+import PickACard from "./PickACard";
 
-export {
-    Card,
-    Readme
-};
+export { Back, PickACard };

@@ -10,7 +10,7 @@ const makeGraphic = (props, svg) => {
     )
 }
 
-export default function Back(props) {
+export default function CardBack(props) {
     let c = `black`;
     const { color } = props;
     if (color) c = color

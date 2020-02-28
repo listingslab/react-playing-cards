@@ -2,7 +2,7 @@
 import React from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 import {
-    Back
+    CardBack
 } from './graphics'
 
 // const useStyles = makeStyles(theme => ({
@@ -12,7 +12,7 @@ import {
 //     }
 // }));
 
-export default function Card() {
+export default function Back() {
     // const classes = useStyles();
     return (
         <React.Fragment>
