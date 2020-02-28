@@ -1,3 +1,0 @@
-## Firebase
-
-- [Firestore](firestore)
