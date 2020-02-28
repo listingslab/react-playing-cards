@@ -16,9 +16,14 @@ import {
 const useStyles = makeStyles(theme => ({
 
     cardContainer: {
-        position: 'relative',
-        width: 300,
         margin: 'auto',
+        position: 'relative',
+        textAlign: 'center',  
+        width: 200
+    },
+    cardWrap:{
+        position: 'absolute',
+        width: 200
     },
     base: {
         position: 'absolute',
@@ -28,18 +33,18 @@ const useStyles = makeStyles(theme => ({
     },
     rank: {
         position: 'absolute',
-        left: 35,
-        top: 45,
+        left: 20,
+        top: 20,
         zIndex: 100,
-        width: 90,
+        width: 60,
 
     },
     suit: {
         position: 'absolute',
-        top: 15,
-        right: 0,
+        top: 8,
+        right: 5,
         zIndex: 150,
-        width: 190,
+        width: 120,
     },
 
 
@@ -120,11 +125,13 @@ export default function PickACard() {
             </div>
 
             <div className={classes.cardContainer}>
+                <div className={classes.cardWrap}>
                 {makeCard({
                     color: `#212121`,
                     suit,
                     rank,
                 })}
+                </div>
             </div>
 
         </React.Fragment>

@@ -1,14 +1,13 @@
 
 # React Playing Cards
 
-Customisable SVG based Playing Card graphics
+Customisable animated SVG Playing Card graphics
 
 - [Animated with Greensock](./animation/README.md)
-- Newfangled SVG graphics
+- Newfangled SVG graphic system, removing the need for bitmaps
 
 ## Install & Run
 
-To start an instance of Storybook on your local machine
 
 ```bash
 git clone https://github.com/listingslab/react-playing-cards.git
