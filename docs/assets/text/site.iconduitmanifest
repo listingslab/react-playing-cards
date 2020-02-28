@@ -1,0 +1,1684 @@
+{
+  "applications": {
+    "native": [
+      {
+        "country": "US",
+        "fingerprints": [
+        ],
+        "id": "915056765",
+        "launchUrl": "iconduit://dashboard",
+        "platform": "itunes",
+        "url": "https://itunes.apple.com/app/id915056765"
+      },
+      {
+        "country": "US",
+        "fingerprints": [
+        ],
+        "id": "com.google.android.apps.maps",
+        "launchUrl": "https://iconduit.app/dashboard",
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps"
+      },
+      {
+        "country": "US",
+        "fingerprints": [
+        ],
+        "id": "9wzdncrdtbvb",
+        "launchUrl": "iconduit://dashboard",
+        "platform": "windows",
+        "url": "https://microsoft.com/p/app/9wzdncrdtbvb"
+      }
+    ],
+    "preferNative": false,
+    "web": {
+      "facebook": {
+      },
+      "twitter": {
+        "cardType": "summary_large_image"
+      }
+    }
+  },
+  "categories": [
+  ],
+  "color": {
+    "background": "#42949f",
+    "brand": "#42949f",
+    "mask": "#42949f",
+    "theme": "#42949f",
+    "tile": "#42949f"
+  },
+  "description": "Relevant JavaScript",
+  "determiner": "",
+  "displayMode": "standalone",
+  "extra": {
+    "license": "MIT",
+    "moreURLs": [
+      {
+        "type": "github-pages",
+        "url": "https://iconduit.github.io/"
+      },
+      {
+        "type": "github-pages",
+        "url": "https://docs.listingslab.com/docs/examples/iconduit/"
+      }
+    ]
+  },
+  "language": "en-US",
+  "masks": {
+    "output": {
+      "appleTouchIconMasked": "iconMaskIosSquircle",
+      "webAppIconMasked": "iconMaskAndroidCircle"
+    },
+    "primary": "iconMaskAndroidSquircle"
+  },
+  "name": "listingslab",
+  "orientation": "any",
+  "os": {
+    "ios": {
+      "statusBarStyle": "black-translucent"
+    }
+  },
+  "output": {
+    "document": {
+      "browserconfigXml": {
+        "path": "browserconfig.xml",
+        "type": "application/xml",
+        "url": "browserconfig.xml"
+      },
+      "iconduitConsumer": {
+        "path": "iconduit.consumer.js",
+        "type": "application/javascript",
+        "url": "iconduit.consumer.js"
+      },
+      "iconduitManifest": {
+        "path": "site.iconduitmanifest",
+        "type": "application/vnd.iconduit.manifest",
+        "url": "site.iconduitmanifest"
+      },
+      "indexHtml": {
+        "path": "index.html",
+        "type": "text/html",
+        "url": "index.html"
+      },
+      "safariMaskIcon": {
+        "path": "safari-mask-icon.svg",
+        "type": "image/svg+xml",
+        "url": "safari-mask-icon.svg"
+      },
+      "tagsHtml": {
+        "path": "tags.html",
+        "type": "text/html",
+        "url": "tags.html"
+      },
+      "webAppManifest": {
+        "path": "site.webmanifest",
+        "type": "application/manifest+json",
+        "url": "site.webmanifest"
+      }
+    },
+    "image": {
+      "appleTouchIcon": {
+        "retina": {
+          "htmlSizes": "180x180",
+          "path": "apple-touch-icon-180x180.png",
+          "size": {
+            "height": 180,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 180
+          },
+          "type": "image/png",
+          "url": "apple-touch-icon-180x180.png"
+        }
+      },
+      "appleTouchIconMasked": {
+        "retina": {
+          "htmlSizes": "180x180",
+          "path": "apple-touch-icon-masked-180x180.png",
+          "size": {
+            "height": 180,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 180
+          },
+          "type": "image/png",
+          "url": "apple-touch-icon-masked-180x180.png"
+        }
+      },
+      "appleTouchStartup": {
+        "ipad1536x2048d264.landscape": {
+          "htmlSizes": "2048x1536",
+          "path": "apple-touch-startup-2048x1536r2.png",
+          "size": {
+            "deviceHeight": 1024,
+            "deviceWidth": 768,
+            "height": 1536,
+            "orientation": "landscape",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 2048
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2048x1536r2.png"
+        },
+        "ipad1536x2048d264.portrait": {
+          "htmlSizes": "1536x2048",
+          "path": "apple-touch-startup-1536x2048r2.png",
+          "size": {
+            "deviceHeight": 1024,
+            "deviceWidth": 768,
+            "height": 2048,
+            "orientation": "portrait",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 1536
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1536x2048r2.png"
+        },
+        "ipad1668x2224d264.landscape": {
+          "htmlSizes": "2224x1668",
+          "path": "apple-touch-startup-2224x1668r2.png",
+          "size": {
+            "deviceHeight": 1112,
+            "deviceWidth": 834,
+            "height": 1668,
+            "orientation": "landscape",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 2224
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2224x1668r2.png"
+        },
+        "ipad1668x2224d264.portrait": {
+          "htmlSizes": "1668x2224",
+          "path": "apple-touch-startup-1668x2224r2.png",
+          "size": {
+            "deviceHeight": 1112,
+            "deviceWidth": 834,
+            "height": 2224,
+            "orientation": "portrait",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 1668
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1668x2224r2.png"
+        },
+        "ipad1668x2388d264.landscape": {
+          "htmlSizes": "2388x1668",
+          "path": "apple-touch-startup-2388x1668r2.png",
+          "size": {
+            "deviceHeight": 1194,
+            "deviceWidth": 834,
+            "height": 1668,
+            "orientation": "landscape",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 2388
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2388x1668r2.png"
+        },
+        "ipad1668x2388d264.portrait": {
+          "htmlSizes": "1668x2388",
+          "path": "apple-touch-startup-1668x2388r2.png",
+          "size": {
+            "deviceHeight": 1194,
+            "deviceWidth": 834,
+            "height": 2388,
+            "orientation": "portrait",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 1668
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1668x2388r2.png"
+        },
+        "ipad2048x2732d264.landscape": {
+          "htmlSizes": "2732x2048",
+          "path": "apple-touch-startup-2732x2048r2.png",
+          "size": {
+            "deviceHeight": 1366,
+            "deviceWidth": 1024,
+            "height": 2048,
+            "orientation": "landscape",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 2732
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2732x2048r2.png"
+        },
+        "ipad2048x2732d264.portrait": {
+          "htmlSizes": "2048x2732",
+          "path": "apple-touch-startup-2048x2732r2.png",
+          "size": {
+            "deviceHeight": 1366,
+            "deviceWidth": 1024,
+            "height": 2732,
+            "orientation": "portrait",
+            "pixelDensity": 264,
+            "pixelRatio": 2,
+            "width": 2048
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2048x2732r2.png"
+        },
+        "iphone1125x2436.landscape": {
+          "htmlSizes": "2436x1125",
+          "path": "apple-touch-startup-2436x1125r3.png",
+          "size": {
+            "deviceHeight": 812,
+            "deviceWidth": 375,
+            "height": 1125,
+            "orientation": "landscape",
+            "pixelDensity": 458,
+            "pixelRatio": 3,
+            "width": 2436
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2436x1125r3.png"
+        },
+        "iphone1125x2436.portrait": {
+          "htmlSizes": "1125x2436",
+          "path": "apple-touch-startup-1125x2436r3.png",
+          "size": {
+            "deviceHeight": 812,
+            "deviceWidth": 375,
+            "height": 2436,
+            "orientation": "portrait",
+            "pixelDensity": 458,
+            "pixelRatio": 3,
+            "width": 1125
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1125x2436r3.png"
+        },
+        "iphone1242x2208.landscape": {
+          "htmlSizes": "2208x1242",
+          "path": "apple-touch-startup-2208x1242r3.png",
+          "size": {
+            "deviceHeight": 736,
+            "deviceWidth": 414,
+            "height": 1242,
+            "orientation": "landscape",
+            "pixelDensity": 462,
+            "pixelRatio": 3,
+            "width": 2208
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2208x1242r3.png"
+        },
+        "iphone1242x2208.portrait": {
+          "htmlSizes": "1242x2208",
+          "path": "apple-touch-startup-1242x2208r3.png",
+          "size": {
+            "deviceHeight": 736,
+            "deviceWidth": 414,
+            "height": 2208,
+            "orientation": "portrait",
+            "pixelDensity": 462,
+            "pixelRatio": 3,
+            "width": 1242
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1242x2208r3.png"
+        },
+        "iphone1242x2688.landscape": {
+          "htmlSizes": "2688x1242",
+          "path": "apple-touch-startup-2688x1242r3.png",
+          "size": {
+            "deviceHeight": 896,
+            "deviceWidth": 414,
+            "height": 1242,
+            "orientation": "landscape",
+            "pixelDensity": 458,
+            "pixelRatio": 3,
+            "width": 2688
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-2688x1242r3.png"
+        },
+        "iphone1242x2688.portrait": {
+          "htmlSizes": "1242x2688",
+          "path": "apple-touch-startup-1242x2688r3.png",
+          "size": {
+            "deviceHeight": 896,
+            "deviceWidth": 414,
+            "height": 2688,
+            "orientation": "portrait",
+            "pixelDensity": 458,
+            "pixelRatio": 3,
+            "width": 1242
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1242x2688r3.png"
+        },
+        "iphone640x1136.landscape": {
+          "htmlSizes": "1136x640",
+          "path": "apple-touch-startup-1136x640r2.png",
+          "size": {
+            "deviceHeight": 568,
+            "deviceWidth": 320,
+            "height": 640,
+            "orientation": "landscape",
+            "pixelDensity": 326,
+            "pixelRatio": 2,
+            "width": 1136
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1136x640r2.png"
+        },
+        "iphone640x1136.portrait": {
+          "htmlSizes": "640x1136",
+          "path": "apple-touch-startup-640x1136r2.png",
+          "size": {
+            "deviceHeight": 568,
+            "deviceWidth": 320,
+            "height": 1136,
+            "orientation": "portrait",
+            "pixelDensity": 326,
+            "pixelRatio": 2,
+            "width": 640
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-640x1136r2.png"
+        },
+        "iphone750x1334.landscape": {
+          "htmlSizes": "1334x750",
+          "path": "apple-touch-startup-1334x750r2.png",
+          "size": {
+            "deviceHeight": 667,
+            "deviceWidth": 375,
+            "height": 750,
+            "orientation": "landscape",
+            "pixelDensity": 326,
+            "pixelRatio": 2,
+            "width": 1334
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1334x750r2.png"
+        },
+        "iphone750x1334.portrait": {
+          "htmlSizes": "750x1334",
+          "path": "apple-touch-startup-750x1334r2.png",
+          "size": {
+            "deviceHeight": 667,
+            "deviceWidth": 375,
+            "height": 1334,
+            "orientation": "portrait",
+            "pixelDensity": 326,
+            "pixelRatio": 2,
+            "width": 750
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-750x1334r2.png"
+        },
+        "iphone828x1792.landscape": {
+          "htmlSizes": "1792x828",
+          "path": "apple-touch-startup-1792x828r2.png",
+          "size": {
+            "deviceHeight": 896,
+            "deviceWidth": 414,
+            "height": 828,
+            "orientation": "landscape",
+            "pixelDensity": 326,
+            "pixelRatio": 2,
+            "width": 1792
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-1792x828r2.png"
+        },
+        "iphone828x1792.portrait": {
+          "htmlSizes": "828x1792",
+          "path": "apple-touch-startup-828x1792r2.png",
+          "size": {
+            "deviceHeight": 896,
+            "deviceWidth": 414,
+            "height": 1792,
+            "orientation": "portrait",
+            "pixelDensity": 326,
+            "pixelRatio": 2,
+            "width": 828
+          },
+          "type": "image/png",
+          "url": "apple-touch-startup-828x1792r2.png"
+        }
+      },
+      "dmgBackground": {
+        "primary": {
+          "htmlSizes": "640x380",
+          "path": "dmg-background.png",
+          "size": {
+            "height": 380,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 640
+          },
+          "type": "image/png",
+          "url": "dmg-background.png"
+        },
+        "primary@2x": {
+          "htmlSizes": "1280x760",
+          "path": "dmg-background@2x.png",
+          "size": {
+            "height": 760,
+            "pixelDensity": 72,
+            "pixelRatio": 2,
+            "width": 1280
+          },
+          "type": "image/png",
+          "url": "dmg-background@2x.png"
+        }
+      },
+      "facebookAppIcon": {
+        "primary": {
+          "htmlSizes": "1024x1024",
+          "path": "facebook-app-icon.png",
+          "size": {
+            "height": 1024,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 1024
+          },
+          "type": "image/png",
+          "url": "facebook-app-icon.png"
+        }
+      },
+      "faviconIco": {
+        "container": {
+          "htmlSizes": "16x16 32x32 48x48",
+          "path": "favicon.ico",
+          "size": {
+            "height": 48,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 48
+          },
+          "sizes": [
+            {
+              "height": 48,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 48
+            },
+            {
+              "height": 32,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 32
+            },
+            {
+              "height": 16,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 16
+            }
+          ],
+          "type": "image/vnd.microsoft.icon",
+          "url": "favicon.ico"
+        }
+      },
+      "faviconPng": {
+        "medium": {
+          "htmlSizes": "32x32",
+          "path": "favicon-32x32.png",
+          "size": {
+            "height": 32,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 32
+          },
+          "type": "image/png",
+          "url": "favicon-32x32.png"
+        },
+        "small": {
+          "htmlSizes": "16x16",
+          "path": "favicon-16x16.png",
+          "size": {
+            "height": 16,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 16
+          },
+          "type": "image/png",
+          "url": "favicon-16x16.png"
+        }
+      },
+      "githubAccountIcon": {
+        "primary": {
+          "htmlSizes": "1024x1024",
+          "path": "github-account-icon.png",
+          "size": {
+            "height": 1024,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 1024
+          },
+          "type": "image/png",
+          "url": "github-account-icon.png"
+        }
+      },
+      "macosIcns": {
+        "container": {
+          "htmlSizes": "16x16 32x32 64x64 128x128 256x256 512x512 1024x1024",
+          "path": "macos.icns",
+          "size": {
+            "height": 1024,
+            "pixelDensity": 72,
+            "pixelRatio": 2,
+            "width": 1024
+          },
+          "sizes": [
+            {
+              "height": 16,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 16
+            },
+            {
+              "height": 32,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 32
+            },
+            {
+              "height": 128,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 128
+            },
+            {
+              "height": 256,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 256
+            },
+            {
+              "height": 512,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 512
+            },
+            {
+              "height": 1024,
+              "pixelDensity": 72,
+              "pixelRatio": 2,
+              "width": 1024
+            },
+            {
+              "height": 512,
+              "pixelDensity": 72,
+              "pixelRatio": 2,
+              "width": 512
+            },
+            {
+              "height": 256,
+              "pixelDensity": 72,
+              "pixelRatio": 2,
+              "width": 256
+            },
+            {
+              "height": 64,
+              "pixelDensity": 72,
+              "pixelRatio": 2,
+              "width": 64
+            },
+            {
+              "height": 32,
+              "pixelDensity": 72,
+              "pixelRatio": 2,
+              "width": 32
+            }
+          ],
+          "type": "image/icns",
+          "url": "macos.icns"
+        }
+      },
+      "notificationBadge": {
+        "primary": {
+          "htmlSizes": "128x128",
+          "path": "notification-badge.png",
+          "size": {
+            "height": 128,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 128
+          },
+          "type": "image/png",
+          "url": "notification-badge.png"
+        }
+      },
+      "notificationIcon": {
+        "primary": {
+          "htmlSizes": "256x256",
+          "path": "notification-icon.png",
+          "size": {
+            "height": 256,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 256
+          },
+          "type": "image/png",
+          "url": "notification-icon.png"
+        }
+      },
+      "openGraphImage": {
+        "primary": {
+          "htmlSizes": "1200x630",
+          "path": "open-graph.png",
+          "size": {
+            "height": 630,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 1200
+          },
+          "type": "image/png",
+          "url": "open-graph.png"
+        }
+      },
+      "twitterCardImage": {
+        "primary": {
+          "htmlSizes": "1200x600",
+          "path": "twitter-card.png",
+          "size": {
+            "height": 600,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 1200
+          },
+          "type": "image/png",
+          "url": "twitter-card.png"
+        }
+      },
+      "webAppIconMaskable": {
+        "large": {
+          "htmlSizes": "1024x1024",
+          "path": "web-app-icon-maskable-1024x1024.png",
+          "size": {
+            "height": 1024,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 1024
+          },
+          "type": "image/png",
+          "url": "web-app-icon-maskable-1024x1024.png"
+        },
+        "medium": {
+          "htmlSizes": "512x512",
+          "path": "web-app-icon-maskable-512x512.png",
+          "size": {
+            "height": 512,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 512
+          },
+          "type": "image/png",
+          "url": "web-app-icon-maskable-512x512.png"
+        },
+        "small": {
+          "htmlSizes": "192x192",
+          "path": "web-app-icon-maskable-192x192.png",
+          "size": {
+            "height": 192,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 192
+          },
+          "type": "image/png",
+          "url": "web-app-icon-maskable-192x192.png"
+        }
+      },
+      "webAppIconMasked": {
+        "large": {
+          "htmlSizes": "1024x1024",
+          "path": "web-app-icon-masked-1024x1024.png",
+          "size": {
+            "height": 1024,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 1024
+          },
+          "type": "image/png",
+          "url": "web-app-icon-masked-1024x1024.png"
+        },
+        "medium": {
+          "htmlSizes": "512x512",
+          "path": "web-app-icon-masked-512x512.png",
+          "size": {
+            "height": 512,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 512
+          },
+          "type": "image/png",
+          "url": "web-app-icon-masked-512x512.png"
+        },
+        "small": {
+          "htmlSizes": "192x192",
+          "path": "web-app-icon-masked-192x192.png",
+          "size": {
+            "height": 192,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 192
+          },
+          "type": "image/png",
+          "url": "web-app-icon-masked-192x192.png"
+        }
+      },
+      "windowsIco": {
+        "container": {
+          "htmlSizes": "16x16 22x22 24x24 32x32 40x40 48x48 64x64 96x96 128x128 256x256",
+          "path": "windows.ico",
+          "size": {
+            "height": 256,
+            "pixelDensity": 72,
+            "pixelRatio": 1,
+            "width": 256
+          },
+          "sizes": [
+            {
+              "height": 16,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 16
+            },
+            {
+              "height": 22,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 22
+            },
+            {
+              "height": 24,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 24
+            },
+            {
+              "height": 32,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 32
+            },
+            {
+              "height": 40,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 40
+            },
+            {
+              "height": 48,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 48
+            },
+            {
+              "height": 64,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 64
+            },
+            {
+              "height": 96,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 96
+            },
+            {
+              "height": 128,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 128
+            },
+            {
+              "height": 256,
+              "pixelDensity": 72,
+              "pixelRatio": 1,
+              "width": 256
+            }
+          ],
+          "type": "image/vnd.microsoft.icon",
+          "url": "windows.ico"
+        }
+      },
+      "windowsTileLarge": {
+        "large@2x": {
+          "htmlSizes": "620x620",
+          "path": "windows-tile-620x620.png",
+          "size": {
+            "height": 620,
+            "pixelDensity": 72,
+            "pixelRatio": 2,
+            "width": 620
+          },
+          "type": "image/png",
+          "url": "windows-tile-620x620.png"
+        }
+      },
+      "windowsTileMedium": {
+        "medium@2x": {
+          "htmlSizes": "300x300",
+          "path": "windows-tile-300x300.png",
+          "size": {
+            "height": 300,
+            "pixelDensity": 72,
+            "pixelRatio": 2,
+            "width": 300
+          },
+          "type": "image/png",
+          "url": "windows-tile-300x300.png"
+        }
+      },
+      "windowsTileSmall": {
+        "small@2x": {
+          "htmlSizes": "140x140",
+          "path": "windows-tile-140x140.png",
+          "size": {
+            "height": 140,
+            "pixelDensity": 72,
+            "pixelRatio": 2,
+            "width": 140
+          },
+          "type": "image/png",
+          "url": "windows-tile-140x140.png"
+        }
+      },
+      "windowsTileWide": {
+        "wide@2x": {
+          "htmlSizes": "620x300",
+          "path": "windows-tile-620x300.png",
+          "size": {
+            "height": 300,
+            "pixelDensity": 72,
+            "pixelRatio": 2,
+            "width": 620
+          },
+          "type": "image/png",
+          "url": "windows-tile-620x300.png"
+        }
+      }
+    }
+  },
+  "outputPath": ".",
+  "shortName": "listingslab",
+  "tag": {
+    "appleTouchStartup": [
+      {
+        "attributes": {
+          "href": "<%- current.url() %>",
+          "media": "(device-width: <%- current.output.size.deviceWidth %>px) and (device-height: <%- current.output.size.deviceHeight %>px) and (-webkit-device-pixel-ratio: <%- current.output.size.pixelRatio %>) and (orientation: <%- current.output.size.orientation %>)",
+          "rel": "apple-touch-startup-image"
+        },
+        "children": [
+        ],
+        "imageName": "appleTouchStartup",
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "link"
+      }
+    ],
+    "graph": [
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "property": "og:title"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.name %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (({id, launchUrl} = {}) => id && (launchUrl ? `app-id=${id}, app-argument=${absoluteUrl(launchUrl)}` : `app-id=${id}`))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>",
+          "name": "apple-itunes-app"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (({id, launchUrl} = {}) => id && (launchUrl ? `app-id=${id}, app-argument=${absoluteUrl(launchUrl)}` : `app-id=${id}`))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.applications.native.find(({platform}) => platform === \"play\") || {}).id %>",
+          "property": "al:android:package"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (manifest.applications.native.find(({platform}) => platform === \"play\") || {}).id %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "property": "al:android:app_name"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.native.find(({platform}) => platform === \"play\") ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>",
+          "property": "al:ios:url"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).id %>",
+          "property": "al:ios:app_store_id"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).id %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "property": "al:ios:app_name"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.native.find(({platform}) => platform === \"itunes\") ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- absoluteUrl(manifest.urls.start) %>",
+          "property": "al:web:url"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteUrl(manifest.urls.start) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"windows\")) %>",
+          "property": "al:windows:url"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"windows\")) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.applications.native.find(({platform}) => platform === \"windows\") || {}).id %>",
+          "property": "al:windows:package"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (manifest.applications.native.find(({platform}) => platform === \"windows\") || {}).id %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "property": "al:windows:app_name"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.native.find(({platform}) => platform === \"windows\") ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.applications.web.facebook.appId %>",
+          "property": "fb:app_id"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.facebook.appId %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "website",
+          "property": "og:type"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.language.replace(\"-\", \"_\") %>",
+          "property": "og:locale"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.language.replace(\"-\", \"_\") %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- absoluteUrl(manifest.urls.start) %>",
+          "property": "og:url"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteUrl(manifest.urls.start) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "property": "og:site_name"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.determiner %>",
+          "property": "og:determiner"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.determiner %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"play\")) %>",
+          "property": "al:android:url"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"play\")) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.description %>",
+          "property": "og:description"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.description %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.applications.web.twitter.cardType %>",
+          "name": "twitter:card"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (handle => handle && `@${handle}`)(manifest.applications.web.twitter.siteHandle) %>",
+          "name": "twitter:site"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (handle => handle && `@${handle}`)(manifest.applications.web.twitter.siteHandle) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (handle => handle && `@${handle}`)(manifest.applications.web.twitter.creatorHandle) %>",
+          "name": "twitter:creator"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType.startsWith(\"summary\") ? \"true\" : \"\" %>",
+          "<%- (handle => handle && `@${handle}`)(manifest.applications.web.twitter.creatorHandle) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "name": "twitter:title"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType.startsWith(\"summary\") ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.description || \"\").length <= 200 ? manifest.description : manifest.description.substring(197) + \"...\" %>",
+          "name": "twitter:description"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (manifest.description || \"\").length <= 200 ? manifest.description : manifest.description.substring(197) + \"...\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).country %>",
+          "name": "twitter:app:country"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).country %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "name": "twitter:app:name:iphone"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- manifest.applications.native.find(({platform}) => platform === \"itunes\") ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).id %>",
+          "name": "twitter:app:id:iphone"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).id %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>",
+          "name": "twitter:app:url:iphone"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "name": "twitter:app:name:ipad"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- manifest.applications.native.find(({platform}) => platform === \"itunes\") ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).id %>",
+          "name": "twitter:app:id:ipad"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- (manifest.applications.native.find(({platform}) => platform === \"itunes\") || {}).id %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>",
+          "name": "twitter:app:url:ipad"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"itunes\")) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "name": "twitter:app:name:googleplay"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- manifest.applications.native.find(({platform}) => platform === \"play\") ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (manifest.applications.native.find(({platform}) => platform === \"play\") || {}).id %>",
+          "name": "twitter:app:id:googleplay"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- (manifest.applications.native.find(({platform}) => platform === \"play\") || {}).id %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"play\")) %>",
+          "name": "twitter:app:url:googleplay"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.applications.web.twitter.cardType === \"app\" ? \"true\" : \"\" %>",
+          "<%- (({launchUrl} = {}) => launchUrl && absoluteUrl(launchUrl))(manifest.applications.native.find(({platform}) => platform === \"play\")) %>"
+        ],
+        "tag": "meta"
+      }
+    ],
+    "graphImage": [
+      {
+        "attributes": {
+          "content": "<%- absoluteImageUrl(current.name, current.size) %>",
+          "property": "og:image"
+        },
+        "children": [
+        ],
+        "imageName": "openGraphImage",
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteImageUrl(current.name, current.size) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- current.output.type %>",
+          "property": "og:image:type"
+        },
+        "children": [
+        ],
+        "imageName": "openGraphImage",
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteImageUrl(current.name, current.size) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- current.output.size.width %>",
+          "property": "og:image:width"
+        },
+        "children": [
+        ],
+        "imageName": "openGraphImage",
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteImageUrl(current.name, current.size) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- current.output.size.height %>",
+          "property": "og:image:height"
+        },
+        "children": [
+        ],
+        "imageName": "openGraphImage",
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteImageUrl(current.name, current.size) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "property": "og:image:alt"
+        },
+        "children": [
+        ],
+        "imageName": "openGraphImage",
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteImageUrl(current.name, current.size) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- absoluteImageUrl(current.name, current.size) %>",
+          "name": "twitter:image"
+        },
+        "children": [
+        ],
+        "imageName": "twitterCardImage",
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteImageUrl(current.name, current.size) %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "name": "twitter:image:alt"
+        },
+        "children": [
+        ],
+        "imageName": "twitterCardImage",
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- absoluteImageUrl(current.name, current.size) %>"
+        ],
+        "tag": "meta"
+      }
+    ],
+    "icon": [
+      {
+        "attributes": {
+          "href": "<%- current.url() %>",
+          "rel": "apple-touch-icon"
+        },
+        "children": [
+        ],
+        "imageName": "appleTouchIcon",
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "href": "<%- current.url() %>",
+          "rel": "icon",
+          "sizes": "<%- current.output.htmlSizes %>",
+          "type": "<%- current.output.type %>"
+        },
+        "children": [
+        ],
+        "imageName": "faviconPng",
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "color": "<%- manifest.color.mask %>",
+          "href": "<%- current.url() %>",
+          "rel": "mask-icon"
+        },
+        "children": [
+        ],
+        "documentName": "safariMaskIcon",
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "link"
+      }
+    ],
+    "link": [
+      {
+        "attributes": {
+          "href": "<%- current.url() %>",
+          "rel": "manifest"
+        },
+        "children": [
+        ],
+        "documentName": "webAppManifest",
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "link"
+      }
+    ],
+    "meta": [
+      {
+        "attributes": {
+          "content": "yes",
+          "name": "mobile-web-app-capable"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (mode => [\"standalone\", \"fullscreen\"].includes(mode))(manifest.displayMode) ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "yes",
+          "name": "apple-mobile-web-app-capable"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- (mode => [\"standalone\", \"fullscreen\"].includes(mode))(manifest.displayMode) ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "name": "application-name"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.name %>",
+          "name": "apple-mobile-web-app-title"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.description %>",
+          "name": "description"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.viewport %>",
+          "name": "viewport"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.color.theme %>",
+          "name": "theme-color"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.os.ios.statusBarStyle %>",
+          "name": "apple-mobile-web-app-status-bar-style"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+          "<%- manifest.os.ios.statusBarStyle !== \"default\" ? \"true\" : \"\" %>"
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- manifest.color.tile %>",
+          "name": "msapplication-TileColor"
+        },
+        "children": [
+        ],
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- current.url() %>",
+          "name": "msapplication-TileImage"
+        },
+        "children": [
+        ],
+        "imageName": "windowsTileMedium",
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      },
+      {
+        "attributes": {
+          "content": "<%- current.url() %>",
+          "name": "msapplication-config"
+        },
+        "children": [
+        ],
+        "documentName": "browserconfigXml",
+        "isSelfClosing": true,
+        "predicate": [
+        ],
+        "tag": "meta"
+      }
+    ]
+  },
+  "textDirection": "auto",
+  "urls": {
+    "base": "https://listingslab.com/",
+    "output": ".",
+    "scope": ".",
+    "start": "."
+  },
+  "viewport": "width=device-width, initial-scale=1"
+}

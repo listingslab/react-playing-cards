@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Listingslab Docs</title>
+    <meta name="description" content="listingslab's most up to date markdown documentation" />
+    <meta name="keywords" content="docs, markdown, react, node, javascript, pwa" />
+    <meta name="theme-color" content="#42949f" />
+    <link rel="apple-touch-icon" href="assets/img/logo192.png" />
+    <meta itemprop="name" content="listingslab" />
+    <meta name="listingslab" />
+    <meta property="og:site_name" content="listingslab docs" />
+    <meta property="og:title" content="listingslab docs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://docs.listingslab.com" />
+    <meta property="og:image" content="assets/img/js.jpg" />
+    <meta property="og:description" content="Most up to date listingslab documentation" />
+    <meta name="ICBM" content="52.508272, 13.339242" />
+    <meta name="geo.region" content="DE-BE" />
+    <meta name="geo.placename" content="Berlin" />
+    <meta name="geo.position" content="52.508272;13.339242" />
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="{{ "/" | absolute_url }}">
+                <img 
+                    style="width: 50px; float: left; margin-left: 8px;"
+                    alt=" Listingslab Docs" 
+                    src="/assets/Icon.png" />
+            </a>
+            <div style="clear: both;"></div>
+            
+            <div id="you-might-like" class="side-menu">
+                <ul>
+                    <li>
+                        <a href="/docs/work/" target="_self" title="Grab some popcorn">
+                            Work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/docs/life/" target="_self" title="The smart choice">
+                            Life
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/docs/balance/" target="_self" title="The smart choice">Balance</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="react-menu"></div>
+            <script>
+                var el = document.getElementById('react-menu');
+                el.innerHTML = '';
+            </script>
+
+        </header>
+        <section>
+            {{ content }}
+        </section>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="footer">        
+
+        <div class="github-link">
+             <a href="https://github.com/listingslab-software/docs" target="_blank" rel="noreferrer"
+                title="Check out the Open Source, err, source">
+                <img 
+                    src="/docs/work/git/images/github_logo_16.png" 
+                    alt="View this repo on GitHub" />
+            </a>
+            
+            <div class="small-text">
+                    Should Just Work &trade; and if not... well, you int sin us, roight? &copy;
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
+
+</html>
