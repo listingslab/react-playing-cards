@@ -2,16 +2,16 @@ import React from 'react';
 
 const makeGraphic = (props, svg) => {
     return (
-        <React.Fragment>
+        <div id={props.id}>
             <svg {...props} viewBox="0 0 181 251" >
                 {svg}
             </svg>
-        </React.Fragment >
+        </div>
     )
 }
 
 export default function CardBack(props) {
-    let c = `black`;
+    let c = `#212121`;
     const { color } = props;
     if (color) c = color
     return makeGraphic(props, <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">

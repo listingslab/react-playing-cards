@@ -1,7 +1,7 @@
 {
   "name": "react-playing-cards",
   "description": "Customisable SVG based playing card system in React",
-  "version": "0.1.9",
+  "version": "0.2.2",
   "scripts": {
     "start": "clear && yarn storybook",
     "storybook": "start-storybook -p 6006 -s public",
@@ -21,7 +21,8 @@
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.43",
-    "gsap": "^3.2.0"
+    "gsap": "^3.2.0",
+    "react-material-color-picker": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

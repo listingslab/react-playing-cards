@@ -1,6 +1,6 @@
 import React from "react";
 import { 
-	// Back, 
+	DealSomeCards,
 	PickACard 
 } from "../Cards";
 
@@ -8,5 +8,6 @@ export default {
   title: "Cards"
 };
 
-export const Pick_A_Card = () => <PickACard />;
+export const Pick_a_card = () => <PickACard />;
+export const Deal_cards = () => <DealSomeCards />;
 // export const Back_ = () => <Back />;

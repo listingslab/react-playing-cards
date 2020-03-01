@@ -2416,7 +2416,7 @@ babel-plugin-transform-undefined-to-void@^6.9.4:
     babel-plugin-transform-undefined-to-void "^6.9.4"
     lodash "^4.17.11"
 
-babel-runtime@^6.26.0:
+babel-runtime@^6.26.0, babel-runtime@^6.5.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -7339,6 +7339,14 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-material-color-picker@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-material-color-picker/-/react-material-color-picker-1.1.2.tgz#178978ae2bf48f0ce5a4404efc0527354ab7a84c"
+  integrity sha512-PCgf/xpXGXQVHppJa/+jIDBj1d/KSgI94NGXWGQWemxdp0DhyUe4fPeGFy94BP2Xg8zaKhDB9pWA/lOmve3XNA==
+  dependencies:
+    babel-runtime "^6.5.0"
+    prop-types "^15.6.0"
 
 react-popper-tooltip@^2.8.3:
   version "2.10.1"

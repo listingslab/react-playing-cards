@@ -1,4 +1,11 @@
-import Back from "./Back";
-import PickACard from "./PickACard";
 
-export { Back, PickACard };
+
+import PickACard from "./PickACard";
+import CardSingle from "./CardSingle";
+import DealSomeCards from "./DealSomeCards";
+
+export { 
+	CardSingle,
+	DealSomeCards,
+	PickACard
+};
