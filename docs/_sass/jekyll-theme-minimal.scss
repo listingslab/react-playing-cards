@@ -6,6 +6,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: #333;
 }
+.menu{
+  margin-top: 20px;
+}
+.footer-logotxt{
+  padding-top: -4px;
+  margin-left: 4px;
+}
 .doc-image {
   width: 100%;
 }
@@ -18,13 +25,13 @@ ul {
   margin: 0 auto;
 }
 header {
-  width: 200px;
+  width: 300px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 section {
-  width: 800px;
+  width: 700px;
   float: right;
   padding-bottom: 50px;
 }
@@ -40,9 +47,9 @@ section {
 }
 
 .footer {
+  text-align: right;
   max-width: 1024px;
   margin: auto;
-  text-align: center;
 }
 
 .small-text {
@@ -86,22 +93,22 @@ h3 {
 
 h1 {
   font-size: 28px;
-  color: #42949f;
+  color: rgba(0,0,0,0.75);
 }
 
 h2 {
-  color: #42949f;
+  color: rgba(0,0,0,0.75);
 }
 
 h3,
 h4,
 h5,
 h6 {
-  color: #42949f;
+  color: rgba(0,0,0,0.75);
 }
 
 a {
-  color: #42949f;
+  color: rgba(0,0,0,0.75);
   text-decoration: none;
 }
 
@@ -112,7 +119,7 @@ a:focus {
 
 a small {
   font-size: 11px;
-  color: #42949f;
+  color: rgba(0,0,0,0.75);
   margin-top: -0.3em;
   display: block;
 }
@@ -185,7 +192,6 @@ hr {
 }
 
 footer {
-  width: 270px;
   float: left;
   position: fixed;
   bottom: 50px;

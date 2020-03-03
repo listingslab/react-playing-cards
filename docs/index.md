@@ -2,24 +2,32 @@
 layout: default
 ---
 
-## Choose your path, young Padwan
+## React Playing Cards
 
-[Work](docs/work)
-
-> New... <a href="docs/work/pro-js-tips"> pr0 JavaScript Tips & Tricks</a>
-
-<div class="third-wide">
+<div>
     <ul>
-        <li><a href="docs/work/pro-js-tips"> pr0 Tips & Tricks</a></li>
-        <li><a href="docs/work/open-source">Open Source</a></li>
-        <li><a href="docs/work/javascript">JavaScript</a></li>
-        <li><a href="docs/work/ProgressiveWebApps">PWA</a></li>
-        <li><a href="docs/work/git">Git</a></li>
-        <li><a href="docs/work/pijs">PiJS</a></li>
-        <li><a href="docs/work/user-entity">User Entity</a></li>
-        <li><a href="docs/work/backlog">Backlog</a></li>
+        <li><a href="docs/storybook">Storybook</a></li>
+        <li><a href="docs/greensock">Greensock</a></li>
+        <li><a href="docs/webclient-integration">Webclient integration</a></li>
     </ul>
 </div>
 
+### Implementation
 
-<div style="clear: both;"></div>
+- Copy `/Cards` directory from [react-playing-cards](https://github.com/listingslab/react-playing-cards) 
+
+- Import & Use in an existing component
+
+```bash
+import { CardSingle } from '<path>/Cards'
+
+<CardSingle
+    id={`S_A`}
+    card={ {
+        suit: `S`, 
+        rank: `A`, 
+        backColor: `#1A1919`,
+        color: item.suit === 'D' || item.suit === 'H' ? `#D33E43` : `#1A1919`
+    } }
+/>
+```
