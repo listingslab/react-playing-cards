@@ -1,3 +1,0 @@
-# React Playing Cards
-
-## Cards

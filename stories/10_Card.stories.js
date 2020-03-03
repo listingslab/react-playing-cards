@@ -2,7 +2,7 @@ import React from "react";
 import { 
 	DealSomeCards,
 	PickACard,
-	VideoOverlay,
+	Overlay,
 } from "../Cards";
 
 export default {
@@ -10,6 +10,7 @@ export default {
 };
 
 
-export const Example_Hand = () => <DealSomeCards />;
+export const Example_Poker_Hand = () => <DealSomeCards />;
+export const Overlay_On_Anything = () => <Overlay />;
 export const Pick_a_card = () => <PickACard />;
-export const Overlay_Onto_Anything = () => <VideoOverlay />;
+
