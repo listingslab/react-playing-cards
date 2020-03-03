@@ -11,8 +11,9 @@ import {
 
 const useStyles = makeStyles(theme => ({
     cardContainer: {
-        position: 'relative',
-        maxWidth: 250
+        opacity: 0,
+        width: 200,
+        position: 'absolute',
     },
     base: {
         zIndex: 50,
@@ -41,15 +42,10 @@ export default function CardSingle(props) {
     const classes = useStyles();
     // S=Spades, D=Diamonds, H=Hearts, C=Clubs
     const [cardStatus, setCardStatus] = React.useState(props.initialState);
-
     useEffect(() => {
-        // if ( cardStatus === `in-deck`){
-        //     moveTo(`placeInDeck`, `#${id}`)
-        // }
         if (cardStatus === `face-down`){
             flipCard(`setToHidden`, `#${id}-card-face`)
             flipCard(`setToShown`, `#${id}-card-back`)
-            // setCardStatus(`turn-face-up`) 
         }
         if (cardStatus === `turn-face-up`){
             flipCard(`hide`, `#${id}-card-back`, () => setCardStatus(`show_face`))
@@ -63,14 +59,14 @@ export default function CardSingle(props) {
         <div 
             id={id}
             className={classes.cardContainer}>
-            <div id={`${id}-card-face`} className={classes.cardWrap}>
+            <div id={`${id}-card-face`}>
                 <Suit card={card} className={classes.suit} />
                 <Rank card={card} className={classes.rank} />
                 <Base card={card} className={classes.base} />
             </div>
             <CardBack 
                 id={`${id}-card-back`}
-                color={card.color}
+                color={card.backColor}
             />
         </div>
     );

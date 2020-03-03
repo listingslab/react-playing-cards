@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { muiTheme } from '../MaterialUI/theme'
-import { flipCard } from './animation'
 import { makeStyles } from '@material-ui/core/styles';
 import MaterialColorPicker from 'react-material-color-picker';
 import IconColor from '@material-ui/icons/ColorLens';
@@ -18,9 +17,12 @@ import {
     CssBaseline,
     AppBar,
     Toolbar,
-    IconButton,
 } from '@material-ui/core';
 import { CardSingle } from './'
+import { 
+    flipCard,
+    moveTo
+} from './animation'
 
 const useStyles = makeStyles(theme => ({
     btnTxt: {
@@ -77,19 +79,17 @@ export default function PickACard() {
     const id = open ? 'simple-popover' : undefined;
     const classes = useStyles();
 
+    useEffect(() => {
+        moveTo('makeVisible',`#${suit}_${rank}`)
+    })
+
     return (
         <React.Fragment>
             <MuiThemeProvider theme={createMuiTheme(muiTheme)}>
             <CssBaseline />
             <AppBar position="static">
                 <Toolbar>
-                  <IconButton 
-                    edge="start" 
-                    className={classes.menuButton} 
-                    color="inherit" 
-                    aria-label="menu">
-                    <IconCard />
-                  </IconButton>
+                  <IconCard className={classes.menuButton} />
                   <Typography 
                     variant="h6" 
                     className={classes.title}>
@@ -184,12 +184,15 @@ export default function PickACard() {
                     </div>
                 </Grid>
                 <Grid item xs={6} className={classes.cardPad}>
-                    
-                        <CardSingle 
-                            id={`${suit}_${rank}`}
-                            card={{suit, rank, color}} 
-                        />
-                    
+                    <CardSingle 
+                        id={`${suit}_${rank}`}
+                        card={{
+                            suit, 
+                            rank, 
+                            color,
+                            backColor: `#1A1919`,
+                        }} 
+                    />
                 </Grid>
             </Grid> 
             </div>

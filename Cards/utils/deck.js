@@ -1,14 +1,12 @@
 // yuck
-
-function shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-}
-
 const getShuffledDeck = () => {
+	function shuffle(a) {
+	    for (let i = a.length - 1; i > 0; i--) {
+	        const j = Math.floor(Math.random() * (i + 1));
+	        [a[i], a[j]] = [a[j], a[i]];
+	    }
+	    return a;
+	}
 	let deck = []
 	let suit = `S`
 	for (let i=1; i<14; i++){
@@ -17,7 +15,11 @@ const getShuffledDeck = () => {
 		if (rank === 11) rank = `J`
 		if (rank === 12) rank = `Q`
 		if (rank === 13) rank = `K`
-		deck.push(`${suit}_${rank}`)
+		deck.push({
+			id:`${suit}_${rank}`,
+			suit,
+			rank: `${rank}`
+		})
 	}
 	suit = `H`
 	for (let i=1; i<14; i++){
@@ -26,7 +28,11 @@ const getShuffledDeck = () => {
 		if (rank === 11) rank = `J`
 		if (rank === 12) rank = `Q`
 		if (rank === 13) rank = `K`
-		deck.push(`${suit}_${rank}`)
+		deck.push({
+			id:`${suit}_${rank}`,
+			suit,
+			rank: `${rank}`
+		})
 	}
 	suit = `C`
 	for (let i=1; i<14; i++){
@@ -35,7 +41,11 @@ const getShuffledDeck = () => {
 		if (rank === 11) rank = `J`
 		if (rank === 12) rank = `Q`
 		if (rank === 13) rank = `K`
-		deck.push(`${suit}_${rank}`)
+		deck.push({
+			id:`${suit}_${rank}`,
+			suit,
+			rank: `${rank}`
+		})
 	}
 	suit = `D`
 	for (let i=1; i<14; i++){
@@ -44,11 +54,13 @@ const getShuffledDeck = () => {
 		if (rank === 11) rank = `J`
 		if (rank === 12) rank = `Q`
 		if (rank === 13) rank = `K`
-		deck.push(`${suit}_${rank}`)
+		deck.push({
+			id:`${suit}_${rank}`,
+			suit,
+			rank: `${rank}`
+		})
 	}
 	return shuffle(deck)
 }
 
-export {
-	getShuffledDeck
-}
+export { getShuffledDeck }

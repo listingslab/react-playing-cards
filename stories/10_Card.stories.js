@@ -1,13 +1,15 @@
 import React from "react";
 import { 
 	DealSomeCards,
-	PickACard 
+	PickACard,
+	VideoOverlay,
 } from "../Cards";
 
 export default {
-  title: "Cards"
+  title: "React Playing Cards"
 };
 
+
+export const Example_Hand = () => <DealSomeCards />;
 export const Pick_a_card = () => <PickACard />;
-export const Deal_cards = () => <DealSomeCards />;
-// export const Back_ = () => <Back />;
+export const Overlay_Onto_Anything = () => <VideoOverlay />;
