@@ -3,7 +3,7 @@ import { getViewport } from  '../utils'
 
 let duration = 1;
 
-const initCard = (card) => {
+const initCard = (card, callback) => {
     gsap.set(card, {
         opacity: 1,
         scale: 0.25,
@@ -13,7 +13,18 @@ const initCard = (card) => {
     });
 }
 
-const dealRiverFirst = (card) => {
+const muckCard = (card, callback) => {
+     gsap.to(card, {
+        duration: 1 * duration,
+        scale: 0.25,
+        rotation: -30,
+        x:-150,
+        y: -200,
+        onComplete: callback,
+    });
+}
+
+const dealRiverFirst = (card, callback) => {
      gsap.to(card, {
         rotation: 0,
         duration: 1 * duration,
@@ -23,27 +34,29 @@ const dealRiverFirst = (card) => {
     });
 }
 
-const dealRiverSecond= (card) => {
+const dealRiverSecond= (card, callback) => {
      gsap.to(card, {
         rotation: 0,
         duration: 1 * duration,
         x: 225,
         y: -75,
-        scale: 0.33
+        scale: 0.33,
+        onComplete: callback,
     });
 }
 
-const dealFlopThird = (card) => {
+const dealFlopThird = (card, callback) => {
      gsap.to(card, {
         rotation: 0,
         duration: 1 * duration,
         x: 85,
         y: -75,
-        scale: 0.33
+        scale: 0.33,
+        onComplete: callback,
     });
 }
 
-const dealFlopSecond = (card) => {
+const dealFlopSecond = (card, callback) => {
      gsap.to(card, {
         rotation: 0,
         duration: 1 * duration,
@@ -53,7 +66,7 @@ const dealFlopSecond = (card) => {
     });
 }
 
-const dealFlopFirst = (card) => {
+const dealFlopFirst = (card, callback) => {
      gsap.to(card, {
         rotation: 0,
         duration: 1 * duration,
@@ -64,13 +77,13 @@ const dealFlopFirst = (card) => {
 }
 
 
-const makeVisible = (card) => {
+const makeVisible = (card, callback) => {
      gsap.set(card, {
         opacity: 1,
     });
 }
 
-const dealFirst = (card) => {
+const dealFirst = (card, callback) => {
      gsap.to(card, {
         rotation: 0,
         duration: 1 * duration,
@@ -80,13 +93,14 @@ const dealFirst = (card) => {
     });
 }
 
-const dealSecond = (card) => {
+const dealSecond = (card, callback) => {
      gsap.to(card, {
         rotation: 0,
         duration: 1 * duration,
         x: 160,
         y: 110,
-        scale: 0.8
+        scale: 0.8,
+        onComplete: callback,
     });
 }
 
@@ -114,19 +128,19 @@ export const moveTo = (animation, card, callback) => {
     switch (animation) {
 
         case `makeVisible`:
-            return makeVisible(card)
+            return makeVisible(card, callback)
 
         case `dealSecond`:
-            return dealSecond(card)
+            return dealSecond(card, callback)
         
         case `dealFirst`:
-            return dealFirst(card)
+            return dealFirst(card, callback)
         
         case `initCard`:
-            return initCard(card)
+            return initCard(card, callback)
 
         case `placeInDeck`:
-            return placeInDeck(card)
+            return placeInDeck(card, callback)
 
         case `dealFirstCard`:
             return dealFirstCard(card, callback)
@@ -145,6 +159,10 @@ export const moveTo = (animation, card, callback) => {
 
         case `dealRiverSecond`:
             return dealRiverSecond(card, callback)
+
+        case `muckCard`:
+            return muckCard(card, callback)
+            
 
         default: {
             return null

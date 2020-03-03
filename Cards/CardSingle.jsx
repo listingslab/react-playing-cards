@@ -15,6 +15,9 @@ const useStyles = makeStyles(theme => ({
         width: 200,
         position: 'absolute',
     },
+    back:{
+        zIndex: 25,
+    },
     base: {
         zIndex: 50,
         position: 'absolute',
@@ -65,6 +68,7 @@ export default function CardSingle(props) {
                 <Base card={card} className={classes.base} />
             </div>
             <CardBack 
+                className={classes.back}
                 id={`${id}-card-back`}
                 color={card.backColor}
             />

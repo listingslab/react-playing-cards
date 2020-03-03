@@ -32,12 +32,6 @@ const useStyles = makeStyles(theme => ({
         height: 'calc(100vh - 65px)',
         overflow: 'hidden',
     },
-    gameBtns:{
-        position: 'absolute',
-        width: 200,
-        top: 8,
-        right: 8,
-    },
     menuButton: {
         marginRight: theme.spacing(2),
     },
@@ -52,21 +46,21 @@ export default function DealSomeCards() {
     const [inPlay, setInPlay] = React.useState([]);
     const [color, setColor] = React.useState('#212121');
     const [nextAction, setNextAction] = React.useState({key:`dealHand`, value:`Deal Player Hand`});
-    const [trigger, setTrigger] = React.useState('trigger');
+    const [actionDisabled, setActionDisabled] = React.useState(false);
 
     const initHandCards = () => {
         setTimeout(() => {
         moveTo('initCard', `#${inPlay[0].id}`)
         moveTo('dealFirst', `#${inPlay[0].id}`)
         flipCard(`setToHidden`, `#${inPlay[0].id}-card-face`)
-        flipCard(`hide`, `#${inPlay[0].id}-card-back`, () => {})
-        flipCard(`show`, `#${inPlay[0].id}-card-face`, () => {})
+        flipCard(`hide`, `#${inPlay[0].id}-card-back`)
+        flipCard(`show`, `#${inPlay[0].id}-card-face`)
         setTimeout(() => {
             moveTo('initCard', `#${inPlay[1].id}`)
-            moveTo('dealSecond', `#${inPlay[1].id}`)
+            moveTo('dealSecond', `#${inPlay[1].id}`, () => setActionDisabled(false))
             flipCard(`setToHidden`, `#${inPlay[1].id}-card-face`)
-            flipCard(`hide`, `#${inPlay[1].id}-card-back`, () => {})
-            flipCard(`show`, `#${inPlay[1].id}-card-face`, () => {})
+            flipCard(`hide`, `#${inPlay[1].id}-card-back`)
+            flipCard(`show`, `#${inPlay[1].id}-card-face`)
         }, 750)}, 100)
     }
 
@@ -75,20 +69,20 @@ export default function DealSomeCards() {
             moveTo('initCard', `#${inPlay[2].id}`)
             moveTo('dealFlopFirst', `#${inPlay[2].id}`)
             flipCard(`setToHidden`, `#${inPlay[2].id}-card-face`)
-            flipCard(`hide`, `#${inPlay[2].id}-card-back`, () => {})
-            flipCard(`show`, `#${inPlay[2].id}-card-face`, () => {})
+            flipCard(`hide`, `#${inPlay[2].id}-card-back`)
+            flipCard(`show`, `#${inPlay[2].id}-card-face`)
             setTimeout(() => {
                 moveTo('initCard', `#${inPlay[3].id}`)
                 moveTo('dealFlopSecond', `#${inPlay[3].id}`)
                 flipCard(`setToHidden`, `#${inPlay[3].id}-card-face`)
-                flipCard(`hide`, `#${inPlay[3].id}-card-back`, () => {})
-                flipCard(`show`, `#${inPlay[3].id}-card-face`, () => {})
+                flipCard(`hide`, `#${inPlay[3].id}-card-back`)
+                flipCard(`show`, `#${inPlay[3].id}-card-face`)
                 setTimeout(() => {
                     moveTo('initCard', `#${inPlay[4].id}`)
-                    moveTo('dealFlopThird', `#${inPlay[4].id}`)
+                    moveTo('dealFlopThird', `#${inPlay[4].id}`, () => setActionDisabled(false))
                     flipCard(`setToHidden`, `#${inPlay[4].id}-card-face`)
-                    flipCard(`hide`, `#${inPlay[4].id}-card-back`, () => {})
-                    flipCard(`show`, `#${inPlay[4].id}-card-face`, () => {})
+                    flipCard(`hide`, `#${inPlay[4].id}-card-back`)
+                    flipCard(`show`, `#${inPlay[4].id}-card-face`)
                 }, 750)
             }, 750)
         }, 100)
@@ -99,15 +93,25 @@ export default function DealSomeCards() {
         moveTo('initCard', `#${inPlay[5].id}`)
         moveTo('dealRiverFirst', `#${inPlay[5].id}`)
         flipCard(`setToHidden`, `#${inPlay[5].id}-card-face`)
-        flipCard(`hide`, `#${inPlay[5].id}-card-back`, () => {})
-        flipCard(`show`, `#${inPlay[5].id}-card-face`, () => {})
+        flipCard(`hide`, `#${inPlay[5].id}-card-back`)
+        flipCard(`show`, `#${inPlay[5].id}-card-face`)
         setTimeout(() => {
             moveTo('initCard', `#${inPlay[6].id}`)
-            moveTo('dealRiverSecond', `#${inPlay[6].id}`)
+            moveTo('dealRiverSecond', `#${inPlay[6].id}`, () => setActionDisabled(false))
             flipCard(`setToHidden`, `#${inPlay[6].id}-card-face`)
-            flipCard(`hide`, `#${inPlay[6].id}-card-back`, () => {})
-            flipCard(`show`, `#${inPlay[6].id}-card-face`, () => {})
+            flipCard(`hide`, `#${inPlay[6].id}-card-back`)
+            flipCard(`show`, `#${inPlay[6].id}-card-face`)
         }, 750)}, 100)
+    }
+
+    const muckCards = () => {
+        for (let i=0; i<inPlay.length; i++){
+            setTimeout(() => {
+                moveTo('muckCard', `#${inPlay[i].id}`, () => setActionDisabled(false))
+                flipCard(`show`, `#${inPlay[i].id}-card-back`)
+                flipCard(`hide`, `#${inPlay[i].id}-card-face`)
+            }, 100*i)
+        }
     }
 
     useEffect(() => {
@@ -126,10 +130,11 @@ export default function DealSomeCards() {
                       <Typography 
                         variant="h6" 
                         className={classes.title}>
-                        Example Hand
+                        Example Poker Hand
                       </Typography>
 
                       <Button
+                            disabled={actionDisabled}
                             variant={`contained`}
                             color={`secondary`}
                             onClick={(e) => {
@@ -140,14 +145,22 @@ export default function DealSomeCards() {
                                     setInPlay(newInPlay)
                                     setNextAction({key:`initFlop`, value:`Deal Flop`})
                                     initHandCards()
+                                    setActionDisabled(true)
                                 }
                                 if (nextAction.key === 'initFlop'){
                                     setNextAction({key:`initRiver`, value:`Deal Rivers`})
                                     initFlop()
+                                    setActionDisabled(true)
                                 }
                                 if (nextAction.key === 'initRiver'){
                                     setNextAction({key:`nextHand`, value:`Next Hand`})
                                     initRivers()
+                                    setActionDisabled(true)
+                                }
+                                if (nextAction.key === 'nextHand'){
+                                    setNextAction({key:`dealHand`, value:`Deal Player Hand`})
+                                    muckCards()
+                                    setActionDisabled(true)
                                 }
                             }}>
                             {nextAction.value}
@@ -156,10 +169,6 @@ export default function DealSomeCards() {
                 </AppBar>
                 
                 <div className={classes.table}>
-                    <div id={`gameBtns`} className={classes.gameBtns}>
-                        
-                    </div>
-
                     {inPlay.map((item, i) => {
                         return (
                             <CardSingle

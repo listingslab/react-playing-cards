@@ -22,9 +22,8 @@ import {
 import { CardSingle } from './'
 import {
     flipCard,
-    moveTo
+    overlay
 } from './animation'
-import { getViewport } from './utils'
 import Vimeo from '@u-wave/react-vimeo';
 
 const useStyles = makeStyles(theme => ({
@@ -44,15 +43,30 @@ const useStyles = makeStyles(theme => ({
 
 export default function VideoOverlay() {
     const classes = useStyles()
-    let viewport = getViewport()
-
-    const [videoSize, setVideoSize] = React.useState({
-        width: viewport.width,
-        height: viewport.height,
-        height: 300,
-    });
+    const [shoe, setShoe] = React.useState(null)
+    const [currentCard, setCurrentCard] = React.useState(null)
+    const [playing, setPlaying] = React.useState(false)
 
     useEffect(() => {
+        if (!shoe){
+            let shuffledDeck = getShuffledDeck()
+            setShoe(shuffledDeck)
+            setCurrentCard(shuffledDeck[0])
+            setTimeout(() => {
+                overlay(`makeVisible`, `#${shuffledDeck[0].id}`)
+            }, 100)
+        }
+        if (currentCard && !playing){
+            console.log (currentCard)
+            setTimeout(() => {
+                overlay(`makeVisible`, `#${currentCard.id}`)
+                overlay(`playCard`, `#${currentCard.id}`, () => {
+                    console.log ('next card')
+                })
+            }, 2000)
+            // setPlaying(true)
+            
+        }
     })
 
     return (
@@ -71,6 +85,19 @@ export default function VideoOverlay() {
                 </AppBar>
                 
                 <div className={classes.table}>
+                    {currentCard ? 
+                        <CardSingle
+                            key={`card_${currentCard}`}
+                            id={currentCard.id}
+                            card={{
+                                suit: currentCard.suit, 
+                                rank: currentCard.rank, 
+                                backColor: `#1A1919`,
+                                color: currentCard.suit === 'D' || currentCard.suit === 'H' ? `#D33E43` : `#1A1919`
+                            }}
+                        />
+                    : null}
+                    
                     <Vimeo
                         autoplay
                         responsive
@@ -78,8 +105,6 @@ export default function VideoOverlay() {
                         loop
                         showTitle={false}
                         video="380844432"
-                        width={videoSize.width}
-                        height={videoSize.height}
                     />
                 </div>
 
