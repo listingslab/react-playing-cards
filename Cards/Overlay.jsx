@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { muiTheme } from '../MaterialUI/theme'
 import { makeStyles } from '@material-ui/core/styles';
-import IconDeal from '@material-ui/icons/ViewColumn';
+import IconVideo from '@material-ui/icons/Tv';
 import {
     CssBaseline,
     Button,
@@ -25,8 +25,21 @@ import {
     flipCard,
     moveTo
 } from './animation'
+import Vimeo from '@u-wave/react-vimeo'
 
 const useStyles = makeStyles(theme => ({
+    cards:{
+        position: 'relative',
+        left: 0,
+        top: 0,
+        zIndex: 20,
+    },
+    videoBase:{
+        position: 'relative',
+                left: 0,
+        top: 0,
+        zIndex: 10,
+    },
     table:{
         position: 'relative',
         height: 'calc(100vh - 65px)',
@@ -40,7 +53,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function DealSomeCards() {
+export default function Overlay() {
     const classes = useStyles();
     const [shoe, setShoe] = React.useState(null);
     const [inPlay, setInPlay] = React.useState([]);
@@ -141,11 +154,11 @@ export default function DealSomeCards() {
                 <CssBaseline />
                 <AppBar position="static">
                     <Toolbar>
-                    <IconDeal className={classes.menuButton} />
+                    <IconVideo className={classes.menuButton} />
                       <Typography 
                         variant="h6" 
                         className={classes.title}>
-                        Example Poker Hand
+                        Overlay onto anything
                       </Typography>
 
                       <Button
@@ -184,21 +197,38 @@ export default function DealSomeCards() {
                 </AppBar>
                 
                 <div className={classes.table}>
-                    {inPlay.map((item, i) => {
-                        return (
-                            <CardSingle
-                                key={`card_${i}`}
-                                id={item.id}
-                                card={{
-                                    suit: item.suit, 
-                                    rank: item.rank, 
-                                    backColor: `#1A1919`,
-                                    color: item.suit === 'D' || item.suit === 'H' ? `#D33E43` : `#1A1919`
-                                }}
-                            />
-                        )
-                    })}
+                    
+                    {inPlay.length ? 
+                        <React.Fragment>
+                            <div className={classes.cards}>
+                            {inPlay.map((item, i) => {
+                                return (
+                                    <CardSingle
+                                        key={`card_${i}`}
+                                        id={item.id}
+                                        card={{
+                                            suit: item.suit, 
+                                            rank: item.rank, 
+                                            backColor: `#1A1919`,
+                                            color: item.suit === 'D' || item.suit === 'H' ? `#D33E43` : `#1A1919`
+                                        }}
+                                    />
+                                )
+                            })}
+                            </div>
+                        </React.Fragment>
+                    : null }
 
+                    <Vimeo
+                        className={classes.videoBase}
+                        autoplay
+                        responsive
+                        controls
+                        loop
+                        showTitle={false}
+                        video="380844432"
+                    />
+                   
                 </div>
 
             </MuiThemeProvider>
