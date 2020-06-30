@@ -222,11 +222,11 @@ export default function Overlay() {
                     <Vimeo
                         className={classes.videoBase}
                         autoplay
+                        video="384301846"
                         responsive
                         controls
                         loop
-                        showTitle={false}
-                        video="380844432"
+                        showTitle={ false }
                     />
                    
                 </div>
