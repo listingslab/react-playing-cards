@@ -22,7 +22,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.43",
     "@u-wave/react-vimeo": "^0.8.2",
-    "gsap": "^3.2.0",
+    "gsap": "^3.6.0",
     "react-material-color-picker": "^1.1.2"
   },
   "devDependencies": {
